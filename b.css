@@ -1,0 +1,114 @@
+*{
+   margin:0;
+   padding:0;
+   font-family:italic;
+ }
+.banner{
+  width:100%;
+  height:100vh;
+  background-image:url("s.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.navbar{
+   width:85%;
+   margin:auto;
+   padding:35px 0;
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+}
+.logo{
+  width:220px;
+  cursor:pointer;
+  display:flex;
+  height:100px;
+}
+.search{
+  width:180px;
+  border: 1px solid black;
+  color:white;
+  right:10px;
+  bottom:5px;
+  position:relative;
+  padding:4px 4px 4px 4px;
+  outline:0;
+  margin-right:16px;
+  font-size:17px;
+  background-color:#285478;
+}
+.navbar ul li{
+   list-style:none;
+   display:inline-block;
+   margin:0 20px;
+   position:relative;
+}
+.navbar ul li a{
+   text-decoration:none;
+    color:black;
+    text-transform:uppercase;
+}
+ .navbar ul li::after{
+   content:' ';
+   height:3px; 
+   width:0%;
+   background:white;
+   position:absolute;
+   left:0;
+   bottom:-10px;
+   transition:0.5s;
+}
+.navbar ul li:hover::after{
+  width:100%;
+}
+.content{
+  width:100%;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  text-align:center;
+  color:#fff;
+}
+ .content h1{
+    font-size:70px;
+    color:indigo;
+    font-style:italic;
+    margin-top:80px;
+}
+ .content p{
+   margin:20px  auto;
+   font-weight:100;
+   color:black;
+}
+ button{
+    width:100px;
+    padding:10px;
+    text-align:center;
+    margin:10px;
+    border-radius:20px;
+    font-weight:bold;
+    font-style:italic;
+    border:2px solid navy;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+span{
+  background:navy;
+  height:100%;
+  width:0%;
+  border-radius:25px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  z-index:-1;
+  transition:0.5s;
+}
+button:hover span{
+  width:100%;
+}
+button:hover{
+  border:none;
+}
